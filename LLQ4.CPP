@@ -9,10 +9,10 @@ struct node {
 
 struct node *ROOT = NULL;
 
-// ✅ Function declaration
+
 int length();
 
-// ✅ Append function
+
 void append()
 {
     struct node *temp, *p;
@@ -37,7 +37,7 @@ void append()
     }
 }
 
-// ✅ Display function
+
 void display()
 {
     struct node *p = ROOT;
@@ -51,7 +51,7 @@ void display()
     printf("NULL\n");
 }
 
-// ✅ Length function
+
 int length()
 {
     int count = 0;
@@ -65,7 +65,7 @@ int length()
     return count;
 }
 
-// ✅ Insert at location
+
 void insert_loc()
 {
     int loc, i = 1;
@@ -79,7 +79,7 @@ void insert_loc()
     printf("Enter location: ");
     scanf("%d", &loc);
 
-    // insert at beginning
+    
     if(loc == 1)
     {
         temp->link = ROOT;
@@ -106,7 +106,7 @@ void insert_loc()
     }
 }
 
-// ✅ Main function
+
 void main()
 {
     int n, i;
