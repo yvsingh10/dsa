@@ -38,33 +38,35 @@ void push(int x){
     
     void pop(){
         if(top==-1){
-            printf("stack is alrerady empty");
+            printf("Stack is alrerady empty.");
             
         }
         else{
             int y;
             y= st[top];
             top=top-1;
+            printf("Popped element is:%d\n",y);
         }
         }
 
 void peek(){
     int y;
     y= st[top];
-    printf("value of top is %d\n",y);
+    printf("Value of top is:%d\n",y);
 }
 
 void traverse()
 {
     if(top==-1){
-        printf("stack is empty");
+        printf("Stack is empty");
     }
     else{
-        printf("stack elements= ");
+        printf("Stack elements:\n");
         for(int i=top;i>=0;i--){
             printf("%d\n",st[i]);
         }
         }
         printf("\n");
     }
+    
     
