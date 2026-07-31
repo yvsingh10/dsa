@@ -13,26 +13,34 @@ void push(){
     temp=(struct node*)malloc(sizeof(struct node));
     printf("Enter the data:");
     scanf("%d",&temp->data);
-    temp->top=NULL;
-    
     temp->next=top;
     top=temp;
     
 }
+void pop(){
+    top=top->next;
+}
 
+void peek(){
+    printf("%d",top->data);
+}
 
+void traverse(){
+    struct node *temp;
+    while(temp->next!=NULL){
+        printf("%d\n",temp->data);
+        temp=temp->next;
+        
+    }
+}
 
-
-
-
-
-
-
-
-
-int main() {
-    // Write C code here
-    printf("Start small. Ship something.");
-
+int main()
+{
+    push();
+    push();
+    push();
+    pop();
+    peek();
+    traverse();
     return 0;
 }
