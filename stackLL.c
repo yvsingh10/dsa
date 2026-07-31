@@ -18,16 +18,20 @@ void push(){
     
 }
 void pop(){
+    struct node*temp=top;
     top=top->next;
+    free(temp);
 }
 
 void peek(){
-    printf("%d",top->data);
+    struct node*temp=top;
+    printf("Value of top is:%d",top->data);
 }
 
 void traverse(){
     struct node *temp;
-    while(temp->next!=NULL){
+    printf("\nStack elements:\n");
+    while(temp!=NULL){
         printf("%d\n",temp->data);
         temp=temp->next;
         
