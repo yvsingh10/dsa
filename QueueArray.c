@@ -52,7 +52,7 @@ void display(){
         int i;
         printf("Queue elements are:");
         for(i=f;i<=R;i++){
-            printf("%d\n",queue[i]);
+            printf("%d  ",queue[i]);
         }
         
     }
